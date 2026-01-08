@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Greeting</title>
+
+  <!-- Красивый "почерк" -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --yellow: #ffd84d;
+      --yellow-soft: #ffe58a;
+      --overlay: rgba(0,0,0,0.65);
+    }
+
+    body{
+      margin: 0;
+      min-height: 100vh;
+
+      /* Фон-картинка */
+      background: url("/img/itadori.jpg") center / cover no-repeat fixed;
+
+      /* Центрирование контента */
+      display: grid;
+      place-items: center;
+
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+
+    /* Тёмный слой поверх картинки */
+    body::before{
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.75), var(--overlay));
+      backdrop-filter: blur(2px);
+      z-index: 0;
+    }
+
+    .card{
+      position: relative;
+      z-index: 1;
+
+      width: min(820px, calc(100% - 32px));
+      padding: 36px 28px;
+
+      border-radius: 18px;
+      background: rgba(0,0,0,0.35);
+      border: 1px solid rgba(255, 216, 77, 0.22);
+      box-shadow: 0 18px 60px rgba(0,0,0,0.5);
+
+      text-align: center;
+    }
+
+    .title{
+      margin: 0 0 10px 0;
+      color: var(--yellow);
+      font-family: "Great Vibes", cursive;
+      font-size: clamp(52px, 7vw, 92px);
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      text-shadow: 0 8px 30px rgba(0,0,0,0.9);
+    }
+
+    .underline{
+      display: inline-block;
+      padding-bottom: 6px;
+      border-bottom: 2px solid rgba(255, 216, 77, 0.85);
+      box-shadow: 0 10px 22px rgba(255, 216, 77, 0.10);
+    }
+
+    .subtitle{
+      margin: 12px 0 0 0;
+      color: var(--yellow-soft);
+      font-size: 14px;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+<main class="card">
+  <h1 class="title">
+    <span class="underline">Hello, <span th:text="${name}">Daniil</span>!</span>
+  </h1>
+
+</main>
+</body>
+</html>
