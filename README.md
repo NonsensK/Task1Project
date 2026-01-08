@@ -27,7 +27,7 @@ http://localhost:8080
 **Result:**  
 Displays a simple text message.
 
-![Home page](screenshots/01-home.png)
+![Home page](screenshots/home.png)
 
 ---
 
@@ -38,7 +38,7 @@ http://localhost:8080/greeting
 **Result:**  
 Displays greeting page with default name.
 
-![Greeting default](screenshots/02-greeting-default.png)
+![Greeting default](screenshots/greeting-default.png)
 
 ---
 
@@ -49,7 +49,7 @@ http://localhost:8080/greeting?name=Itadori
 **Result:**  
 Displays greeting page with provided name.
 
-![Greeting with parameter](screenshots/03-greeting-param.png)
+![Greeting with parameter](screenshots/greeting-param.png)
 
 ---
 
