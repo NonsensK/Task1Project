@@ -1,59 +1,20 @@
-# Task 1 – Spring Boot Web Application
+# Task1Project
 
-## Description
-This project is a simple Spring Boot web application demonstrating basic controller usage
-and rendering views in a web browser.
+Simple Spring Boot web application.
 
-The application shows:
-- a default greeting page
-- a greeting page with a query parameter
+## Use cases
 
----
-
-## How to run
-1. Open the project in IntelliJ IDEA
-2. Run `Task1ProjectApplication`
-3. Open browser and go to:  
-   http://localhost:8080
-
----
-
-## Use cases (browser)
-
-### 1. Home page
-**URL:**  
-http://localhost:8080
-
-**Result:**  
-Displays a simple text message.
+### Home page
+URL: `http://localhost:8080`
 
 ![Home page](screenshots/home.png)
 
----
+### Greeting page (default)
+URL: `http://localhost:8080/greeting`
 
-### 2. Greeting page (default)
-**URL:**  
-http://localhost:8080/greeting
+![Greeting](screenshots/greeting.png)
 
-**Result:**  
-Displays greeting page with default name.
+### Greeting page with name
+URL: `http://localhost:8080/greeting?name=Itadori`
 
-![Greeting default](screenshots/greeting-default.png)
-
----
-
-### 3. Greeting page with parameter
-**URL:**  
-http://localhost:8080/greeting?name=Itadori
-
-**Result:**  
-Displays greeting page with provided name.
-
-![Greeting with parameter](screenshots/greeting-param.png)
-
----
-
-## Technologies
-- Java 21
-- Spring Boot
-- Thymeleaf
+![Greeting with name](screenshots/greeting-name.png)
