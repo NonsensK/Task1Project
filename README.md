@@ -1,20 +1,21 @@
 # Task1Project
 
-Simple Spring Boot web application.
+## Run
+- Start app (Task1ProjectApplication)
+- Open in browser
 
-## Use cases
+## Pages
+- Home page: http://localhost:8080
+- Greeting page: http://localhost:8080/greeting
+- Greeting with name: http://localhost:8080/greeting?name=Itadori
 
-### Home page
-URL: `http://localhost:8080`
+## Screenshots
 
-![Home page](screenshots/home.png)
+### Home
+![Home](screenshots/home.png)
 
-### Greeting page (default)
-URL: `http://localhost:8080/greeting`
-
+### Greeting
 ![Greeting](screenshots/greeting.png)
 
-### Greeting page with name
-URL: `http://localhost:8080/greeting?name=Itadori`
-
+### Greeting with name
 ![Greeting with name](screenshots/greeting-name.png)
